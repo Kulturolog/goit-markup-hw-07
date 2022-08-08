@@ -1,0 +1,40 @@
+.modal-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.checkbox-input:checked + .checkbox-label span {
+  background-color: var(--brand-color);
+  border: none;
+}
+.checkbox-input:checked + .checkbox-label .check-icon {
+  fill: var(--layout-background-color);
+}
+.checkbox-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.checkbox-label a {
+  color: var(--brand-color);
+}
+.checkbox-label span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--rubric-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-icon {
+  fill: transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
