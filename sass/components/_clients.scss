@@ -7,10 +7,11 @@
 }
 .clients-item {
   margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
 }
-.clients-item:first-child {
-  margin-left: 0;
-}
+
 .clients-link {
   display: flex;
   align-items: center;
@@ -23,11 +24,11 @@
   transition-property: border-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--brand-color);
-  color: var(--brand-color);
+  &:hover,
+  &:focus {
+    border-color: var(--brand-color);
+    color: var(--brand-color);
+  }
 }
 .clients-icon {
   fill: currentColor;

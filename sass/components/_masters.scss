@@ -28,10 +28,9 @@
   width: 44px;
   height: 44px;
   margin-left: 10px;
-}
-
-.masters-soc-item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 .masters-soc-link {
   display: flex;
@@ -44,11 +43,11 @@
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.masters-soc-link:hover,
-.masters-soc-link:focus {
-  background-color: var(--brand-color);
-  color: var(--layout-background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color);
+    color: var(--layout-background-color);
+  }
 }
 .masters-soc-icon {
   fill: currentColor;

@@ -106,8 +106,8 @@ address {
   position: relative;
   padding: 32px 0;
 }
-
-.studio-home::after,
+.studio-home::after, .studio-home::after,
+.portfolio-portfolio::after,
 .portfolio-portfolio::after {
   content: "";
   display: block;
@@ -133,6 +133,15 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio-home:hover, .portfolio-home:focus,
+.studio-portfolio:hover,
+.studio-portfolio:focus,
+.contacts-home:hover,
+.contacts-home:focus,
+.contacts-portfolio:hover,
+.contacts-portfolio:focus {
+  color: var(--brand-color);
+}
 
 .mail-home,
 .tel-home,
@@ -150,29 +159,13 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-home:hover,
-.portfolio-home:focus {
-  color: var(--brand-color);
-}
-
-.studio-portfolio:hover,
-.studio-portfolio:focus {
-  color: var(--brand-color);
-}
-
-.contacts-home:hover,
-.contacts-home:focus {
-  color: var(--brand-color);
-}
-
-.contacts-portfolio:hover,
-.contacts-portfolio:focus {
-  color: var(--brand-color);
-}
-
-.mail-home:hover,
-.mail-home:focus {
+.mail-home:hover, .mail-home:focus,
+.tel-home:hover,
+.tel-home:focus,
+.mail-portfolio:hover,
+.mail-portfolio:focus,
+.tel-portfolio:hover,
+.tel-portfolio:focus {
   color: var(--brand-color);
 }
 
@@ -180,21 +173,6 @@ address {
 .tel-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.tel-home:hover,
-.tel-home:focus {
-  color: var(--brand-color);
-}
-
-.mail-portfolio:hover,
-.mail-portfolio:focus {
-  color: var(--brand-color);
-}
-
-.tel-portfolio:hover,
-.tel-portfolio:focus {
-  color: var(--brand-color);
 }
 
 .header-list {
@@ -275,9 +253,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-title-home:hover,
-.button-title-home:focus {
+.button-title-home:hover, .button-title-home:focus {
   background-color: var(--button-color);
 }
 
@@ -290,14 +266,12 @@ address {
   display: flex;
 }
 
-.about-peculiarities:nth-child(-n+3) {
-  margin-right: 30px;
-}
-
 .about-peculiarities {
   width: 270px;
 }
-
+.about-peculiarities:nth-child(-n+3) {
+  margin-right: 30px;
+}
 .about-peculiarities::before {
   display: block;
   content: "";
@@ -361,12 +335,11 @@ address {
   display: flex;
 }
 
-.about-item:nth-child(-n+2) {
-  margin-right: 30px;
-}
-
 .about-item {
   position: relative;
+}
+.about-item:nth-child(-n+2) {
+  margin-right: 30px;
 }
 
 .about-title {
@@ -394,15 +367,14 @@ address {
   display: flex;
 }
 
-.about-tiem:nth-child(-n+3) {
-  margin-right: 30px;
-}
-
 .about-tiem {
   background-color: var(--layout-background-color);
   border-radius: 0px 0px 4px 4px;
   max-width: 370px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.about-tiem:nth-child(-n+3) {
+  margin-right: 30px;
 }
 
 .tiem-master {
@@ -440,7 +412,6 @@ address {
   height: 44px;
   margin-left: 10px;
 }
-
 .masters-soc-item:first-child {
   margin-left: 0;
 }
@@ -457,9 +428,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.masters-soc-link:hover,
-.masters-soc-link:focus {
+.masters-soc-link:hover, .masters-soc-link:focus {
   background-color: var(--brand-color);
   color: var(--layout-background-color);
 }
@@ -480,7 +449,6 @@ address {
 .clients-item {
   margin-left: 30px;
 }
-
 .clients-item:first-child {
   margin-left: 0;
 }
@@ -498,9 +466,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border-color: var(--brand-color);
   color: var(--brand-color);
 }
@@ -541,9 +507,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn-portfolio:hover,
-.btn-portfolio:focus {
+.btn-portfolio:hover, .btn-portfolio:focus {
   color: var(--layout-background-color);
   background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -566,14 +530,17 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.gallery-link:hover,
-.gallery-link:focus {
+.gallery-link:hover, .gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.gallery-link:hover .gallery-link, .gallery-link:focus .gallery-link,
 .gallery-link:hover .gallery-text,
-.gallery-link:focus .gallery-text {
+.gallery-link:focus .gallery-text,
+.gallery-text:hover .gallery-link,
+.gallery-text:focus .gallery-link,
+.gallery-text:hover .gallery-text,
+.gallery-text:focus .gallery-text {
   transform: translateY(0);
 }
 
@@ -662,6 +629,9 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.address-footer:hover, .address-footer:focus {
+  color: var(--brand-color);
+}
 
 .mail-footer {
   font-style: normal;
@@ -673,6 +643,9 @@ address {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail-footer:hover, .mail-footer:focus {
+  color: var(--brand-color);
 }
 
 .tel-footer {
@@ -686,19 +659,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.address-footer:hover,
-.address-footer:focus {
-  color: var(--brand-color);
-}
-
-.mail-footer:hover,
-.mail-footer:focus {
-  color: var(--brand-color);
-}
-
-.tel-footer:hover,
-.tel-footer:focus {
+.tel-footer:hover, .tel-footer:focus {
   color: var(--brand-color);
 }
 
@@ -728,7 +689,6 @@ address {
   height: 44px;
   margin-left: 10px;
 }
-
 .akcent-soc-item:first-child {
   margin-left: 0;
 }
@@ -746,9 +706,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.akcent-soc-link:hover,
-.akcent-soc-link:focus {
+.akcent-soc-link:hover, .akcent-soc-link:focus {
   background-color: var(--brand-color);
 }
 
@@ -773,7 +731,6 @@ address {
   border-radius: 4px;
   color: var(--layout-background-color);
 }
-
 .subscription-input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -803,15 +760,12 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.subscription-button:hover,
-.subscription-button:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--button-color);
-}
-
 .subscription-button svg {
   margin-left: 10px;
+}
+.subscription-button:hover, .subscription-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--button-color);
 }
 
 .backdrop {
@@ -870,9 +824,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-button:focus,
-.modal-button:hover {
+.modal-button:focus, .modal-button:hover {
   fill: var(--brand-color);
 }
 
@@ -895,7 +847,6 @@ address {
   color: var(--text-color);
   margin-bottom: 4px;
 }
-
 .modal-label:nth-child(n+2) {
   display: block;
   margin-top: 10px;
@@ -912,20 +863,15 @@ address {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
+  padding-left: 42px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-input:focus {
   border-color: var(--brand-color);
 }
-
 .modal-input:focus + .modal-icon {
   fill: var(--brand-color);
-}
-
-.modal-input {
-  padding-left: 42px;
 }
 
 .modal-icon {
@@ -951,7 +897,6 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-textarea::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -959,7 +904,6 @@ address {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-textarea:focus {
   border-color: var(--brand-color);
 }
@@ -989,11 +933,9 @@ address {
   display: flex;
   align-items: center;
 }
-
 .checkbox-label a {
   color: var(--brand-color);
 }
-
 .checkbox-label span {
   width: 16px;
   height: 15px;
@@ -1033,9 +975,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-send:hover,
-.button-send:focus {
+.button-send:hover, .button-send:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--button-color);
 }/*# sourceMappingURL=main.css.map */

@@ -4,11 +4,12 @@
 .about-list {
   display: flex;
 }
-.about-item:nth-child(-n + 2) {
-  margin-right: 30px;
-}
+
 .about-item {
   position: relative;
+  &:nth-child(-n + 2) {
+    margin-right: 30px;
+  }
 }
 .about-title {
   font-weight: 700;

@@ -6,22 +6,23 @@
 .peculiarities-list {
   display: flex;
 }
-.about-peculiarities:nth-child(-n + 3) {
-  margin-right: 30px;
-}
 .about-peculiarities {
   width: 270px;
+  &:nth-child(-n + 3) {
+    margin-right: 30px;
+  }
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--second-background-color);
+    margin-bottom: 30px;
+  }
 }
-.about-peculiarities::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--second-background-color);
-  margin-bottom: 30px;
-}
+
 .peculiarities-title {
   font-weight: 700;
   font-size: 14px;

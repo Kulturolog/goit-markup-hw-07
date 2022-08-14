@@ -14,6 +14,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
 .mail-footer {
   font-style: normal;
@@ -25,6 +29,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
 .tel-footer {
   font-style: normal;
@@ -36,16 +44,8 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address-footer:hover,
-.address-footer:focus {
-  color: var(--brand-color);
-}
-.mail-footer:hover,
-.mail-footer:focus {
-  color: var(--brand-color);
-}
-.tel-footer:hover,
-.tel-footer:focus {
-  color: var(--brand-color);
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
