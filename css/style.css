@@ -61,21 +61,7 @@ address {
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 398px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 736px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1128px;
-  }
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -391,6 +377,8 @@ address {
 
 .tiem-list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-tiem {
@@ -432,6 +420,7 @@ address {
 
 .masters-soc-list {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
