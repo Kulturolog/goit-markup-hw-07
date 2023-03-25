@@ -56,7 +56,7 @@ address {
 }
 
 .container {
-  /*width: 1200px;*/
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -377,11 +377,12 @@ address {
 
 .tiem-list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .about-tiem {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--layout-background-color);
   border-radius: 0px 0px 4px 4px;
   max-width: 370px;
