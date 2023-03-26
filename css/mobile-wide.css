@@ -8,18 +8,4 @@
     padding-bottom: 94px;
     padding-top: 94px;
   }
-  .about-tiem {
-    width: calc((100%-60px) / 2);
-  }
-  .about-tiem:nth-last-child(1) {
-    margin-right: 30px;
-  }
-}
-.tiem-list {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.title-main {
-  text-align: center;
 }
