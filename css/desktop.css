@@ -1,5 +1,19 @@
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1143px;
+    max-width: 1158px;
+  }
+  .section-title-home {
+    padding: 188px 472px 292px 472px;
+  }
+  .title-first-home {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--layout-background-color);
+    max-width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
   }
 }
