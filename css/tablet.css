@@ -2,9 +2,6 @@
   .container {
     max-width: 768px;
   }
-  .section-title-home {
-    padding: 112px 136px 204px 136px;
-  }
   .title-first-home {
     font-weight: 700;
     font-size: 56px;
@@ -14,6 +11,9 @@
     max-width: 496px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 52px;
+    margin-bottom: 36px;
+  }
+  .overlay {
+    height: 436px;
   }
 }

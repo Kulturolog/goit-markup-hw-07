@@ -3,7 +3,8 @@
     max-width: 1158px;
   }
   .section-title-home {
-    padding: 188px 472px 292px 472px;
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
   .title-first-home {
     font-weight: 700;
@@ -11,9 +12,22 @@
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--layout-background-color);
-    max-width: 320px;
+    max-width: 496px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 72px;
+    margin-bottom: 48px;
+  }
+  .overlay {
+    height: 600px;
+  }
+  .peculiarities {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .peculiarities-list {
+    display: flex;
+  }
+  .about-peculiarities {
+    width: 270px;
   }
 }
