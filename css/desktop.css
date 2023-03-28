@@ -30,4 +30,35 @@
   .about-peculiarities {
     width: 270px;
   }
+  .about-peculiarities:nth-child(-n + 3) {
+    margin-right: 16px;
+  }
+  .about-peculiarities::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--second-background-color);
+    margin-bottom: 8px;
+  }
+  .icon-vector::before {
+    background-image: url(../img/antenna.svg);
+  }
+
+  .icon-clock::before {
+    background-image: url(../img/clock.svg);
+  }
+
+  .icon-laptop::before {
+    background-image: url(../img/diagram.svg);
+  }
+
+  .icon-astronaut::before {
+    background-image: url(../img/astronaut.svg);
+  }
+  .tiem {
+    padding-bottom: 120px;
+  }
 }
