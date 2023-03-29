@@ -61,4 +61,22 @@
   .tiem {
     padding-bottom: 120px;
   }
+  .tiem {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .about-tiem:nth-child(-n + 3) {
+    margin-right: 30px;
+  }
+  .clients {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .clients-item {
+    margin-left: 30px;
+  }
+
+  .clients-item:first-child {
+    margin-left: 0;
+  }
 }

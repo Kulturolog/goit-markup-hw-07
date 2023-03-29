@@ -345,18 +345,22 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--rubric-color);
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 .tiem {
   background-color: var(--second-background-color);
   padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .tiem-list {
   display: flex;
-  flex-wrap: wrap;
 }
-
+@media screen and (max-width: 1199px) {
+  .tiem-list {
+    flex-wrap: wrap;
+  }
+}
 .about-tiem {
   display: block;
   margin-left: auto;
@@ -367,9 +371,10 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-.about-tiem:nth-child(-n + 3) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .about-tiem:nth-child(-n + 3) {
+    margin-bottom: 72px;
+  }
 }
 
 .tiem-master {
@@ -384,7 +389,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--rubric-color);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .master-skil {
@@ -394,7 +399,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .masters-soc-list {
@@ -437,22 +442,20 @@ address {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .clients-list {
   display: flex;
 }
-
-.clients-item {
-  margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .clients-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 16px;
+  }
 }
-
-.clients-item:first-child {
-  margin-left: 0;
-}
-
 .clients-link {
   display: flex;
   align-items: center;
