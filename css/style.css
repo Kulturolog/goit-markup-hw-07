@@ -75,6 +75,17 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.title-main {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--rubric-color);
+  margin-bottom: 72px;
+}
+
+/* --------HEADER-------- */
 
 .header {
   padding-top: 24px;
@@ -108,7 +119,7 @@ address {
   padding: 32px 0;
 }
 
-/*.studio-home::after,
+.studio-home::after,
 .studio-home::after,
 .portfolio-portfolio::after,
 .portfolio-portfolio::after {
@@ -120,7 +131,7 @@ address {
   border-radius: 2px;
   position: absolute;
   bottom: -2px;
-}*/
+}
 
 .portfolio-home,
 .studio-portfolio,
@@ -209,6 +220,8 @@ address {
   margin-left: 50px;
 }
 
+/*-------------HERO---------*/
+
 .section-title-home {
   background: var(--first-background-color);
   padding-top: 112px;
@@ -266,6 +279,8 @@ address {
 .button-title-home:focus {
   background-color: var(--button-color);
 }
+
+/*----------PECULIARITIES-----------*/
 
 .peculiarities {
   padding-top: 96px;
@@ -338,15 +353,9 @@ address {
     display: none;
   }
 }
-.title-main {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--rubric-color);
-  margin-bottom: 72px;
-}
+
+/*--------------TIEM*-----------*/
+
 .tiem {
   background-color: var(--second-background-color);
   padding-bottom: 96px;
@@ -441,6 +450,8 @@ address {
   fill: currentColor;
 }
 
+/*--------------CLIENTS*---------*/
+
 .clients {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -460,8 +471,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  width: 168px;
+  height: 88px;
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -607,6 +618,16 @@ address {
   background-color: var(--portfolio-main);
 }
 
+/*-------------FOOTER---------*/
+.logo-footer {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+}
+
 .footer-joint {
   background-color: var(--first-background-color);
   padding-top: 60px;
@@ -616,6 +637,11 @@ address {
 .footer-joint .container {
   display: flex;
   align-items: baseline;
+}
+.adress-section {
+  width: 264px;
+}
+@media screen and (max-width: 267px) {
 }
 
 .textwhite {
@@ -682,7 +708,7 @@ address {
 }
 
 .akcent-section {
-  margin-left: 70px;
+  margin-left: 120px;
 }
 
 .akcent-title,
@@ -705,7 +731,7 @@ address {
 .akcent-soc-item {
   width: 44px;
   height: 44px;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 .akcent-soc-item:first-child {
@@ -732,7 +758,7 @@ address {
 }
 
 .subscription-section {
-  margin-left: 93px;
+  margin-left: 80px;
 }
 
 .subscription-form {
@@ -742,9 +768,9 @@ address {
 }
 
 .subscription-input {
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
+  width: 254px;
+  height: 40px;
+  margin-right: 24px;
   padding-left: 16px;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -764,8 +790,8 @@ address {
 }
 
 .subscription-button {
-  min-width: 200px;
-  height: 50px;
+  min-width: 165px;
+  height: 40px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -781,10 +807,11 @@ address {
   justify-content: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 24px;
 }
 
 .subscription-button svg {
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 .subscription-button:hover,
