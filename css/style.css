@@ -630,28 +630,41 @@ address {
 
 .footer-joint {
   background-color: var(--first-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-joint .container {
   display: flex;
-  align-items: baseline;
 }
-.adress-section {
-  width: 264px;
-}
-@media screen and (max-width: 267px) {
+@media screen and (max-width: 767px) {
+  .footer-joint .container,
+  .adress-section,
+  .akcent-section,
+  .subscription-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .textwhite {
   color: var(--layout-background-color);
 }
-
+@media screen and (max-width: 767px) {
+  .adress-section,
+  .akcent-section {
+    margin-bottom: 72px;
+  }
+}
 .address-link {
   margin-top: 20px;
 }
-
+@media screen and (max-width: 767px) {
+  .info-link {
+    text-align: center;
+  }
+}
 .info-link:nth-child(-n + 2) {
   margin-bottom: 9px;
 }
@@ -706,11 +719,6 @@ address {
 .tel-footer:focus {
   color: var(--brand-color);
 }
-
-.akcent-section {
-  margin-left: 120px;
-}
-
 .akcent-title,
 .subscription-title {
   display: block;
@@ -756,21 +764,27 @@ address {
 .akcent-soc-link:focus {
   background-color: var(--brand-color);
 }
-
-.subscription-section {
-  margin-left: 80px;
+@media screen and (max-width: 767px) {
+  /*.subscription-section {
+    width: 100%;
+  }*/
 }
-
-.subscription-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 767px) {
+  .subscription-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscription-input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
 
 .subscription-input {
-  width: 254px;
   height: 40px;
-  margin-right: 24px;
   padding-left: 16px;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -819,7 +833,7 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--button-color);
 }
-
+/*-----------MODAL------*/
 .backdrop {
   position: fixed;
   top: 0;

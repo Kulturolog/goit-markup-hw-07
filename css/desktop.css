@@ -79,4 +79,21 @@
   .clients-item:first-child {
     margin-left: 0;
   }
+  .footer-joint,
+  .container {
+    align-items: baseline;
+  }
+  .akcent-section {
+    margin-left: 120px;
+  }
+  .adress-section {
+    width: 264px;
+  }
+  .subscription-section {
+    margin-left: 80px;
+  }
+  .subscription-input {
+    width: 254px;
+    margin-right: 24px;
+  }
 }
