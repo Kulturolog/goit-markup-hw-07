@@ -491,21 +491,30 @@ address {
   fill: currentColor;
 }
 
-.main-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/*---------MAIN PORTFOLIO--------*/
+@media screen and (max-width: 767px) {
+  .main-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
-
-.button-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
 }
-
-.btn-item:nth-child(-n + 4) {
-  margin-right: 8px;
+@media screen and (max-width: 767px) {
+  .btn-item {
+    padding-right: 16px;
+  }
 }
-
+@media screen and (max-width: 767px) {
+  .btn-item:nth-child(-n + 3) {
+    padding-bottom: 24px;
+  }
+}
 .btn-portfolio {
   font-family: 'Roboto';
   font-weight: 500;
@@ -530,17 +539,6 @@ address {
   background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
-
-.gallery-item {
-  width: calc(33.3333333333% - 30px);
-  margin: 15px;
 }
 
 .gallery-link {
@@ -764,11 +762,7 @@ address {
 .akcent-soc-link:focus {
   background-color: var(--brand-color);
 }
-@media screen and (max-width: 767px) {
-  /*.subscription-section {
-    width: 100%;
-  }*/
-}
+
 @media screen and (max-width: 767px) {
   .subscription-form {
     display: flex;

@@ -96,4 +96,20 @@
     width: 254px;
     margin-right: 24px;
   }
+  .main-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .button-list {
+    margin-bottom: 72px;
+  }
+  .gallery-item {
+    width: calc(33.3333333333% - 24px);
+    margin: 12px;
+  }
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+  }
 }
