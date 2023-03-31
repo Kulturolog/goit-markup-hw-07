@@ -16,13 +16,7 @@
   .overlay {
     height: 436px;
   }
-  .peculiarities-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .about-peculiarities {
-    width: calc((100% - 24px) / 2);
-  }
+
   .subscription-form {
     display: flex;
     align-items: center;
@@ -38,16 +32,19 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .about-peculiarities:nth-child(-n + 2) {
-    margin-bottom: 72px;
-  }
-  .about-peculiarities:nth-child(2n + 1) {
-    margin-right: 24px;
-  }
   .tiem-list {
     flex-flow: row wrap;
     justify-content: center;
     gap: 64px 24px;
+  }
+  .peculiarities-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .about-peculiarities {
+    width: calc((100% - 42px) / 2);
   }
   .about-tiem {
     margin: 0;
@@ -72,5 +69,21 @@
     display: flex;
     flex-flow: row wrap;
     gap: 72px 24px;
+  }
+  .footer-joint .container {
+    width: 565px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .akcent-section {
+    padding-left: 24px;
+  }
+  .adress-section {
+    padding-bottom: 72px;
+    width: 264px;
+  }
+  .subscription-input {
+    margin-right: 24px;
+    width: 264px;
   }
 }
