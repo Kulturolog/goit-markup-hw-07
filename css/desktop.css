@@ -79,8 +79,7 @@
   .clients-item:first-child {
     margin-left: 0;
   }
-  .footer-joint,
-  .container {
+  .footer-joint.container {
     align-items: baseline;
   }
   .akcent-section {

@@ -30,6 +30,9 @@
   .btn-item:nth-child(-n + 4) {
     margin-right: 24px;
   }
+  .mobile-menu {
+    display: none;
+  }
   .mobile-menu-open {
     display: none;
   }
@@ -88,5 +91,29 @@
   .subscription-input {
     margin-right: 24px;
     width: 264px;
+  }
+  .logo {
+    margin-right: 120px;
+  }
+  .header-link:nth-child(-n + 2) {
+    margin-right: 40px;
+  }
+  .contacts-item:last-child {
+    margin: 0;
+  }
+  .mail-home,
+  .tel-home,
+  .mail-portfolio,
+  .tel-portfolio {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+  .contacts-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 67px;
   }
 }
