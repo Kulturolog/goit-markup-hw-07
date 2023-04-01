@@ -30,6 +30,9 @@
   .btn-item:nth-child(-n + 4) {
     margin-right: 24px;
   }
+  .mobile-menu-open {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .tiem-list {
