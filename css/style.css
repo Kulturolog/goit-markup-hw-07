@@ -10,6 +10,7 @@
   --border-portfolio: #eeeeee;
   --portfolio-main: #e5e5e5;
   --icon-color: #afb1b8;
+  --mobile-menu-link-color: #2e2f42;
 }
 
 p,
@@ -241,6 +242,12 @@ address {
     border: none;
     background-color: transparent;
     line-height: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .mobile-menu_close-icon {
+    padding-top: 1px;
+    padding-right: 1px;
   }
 
   .mobile-menu {
@@ -263,7 +270,78 @@ address {
     visibility: hidden;
     pointer-events: none;
   }
+  .mobile-menu-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--mobile-menu-link-color);
+  }
+  .mobile-menu-link:nth-child(-n + 3) {
+    margin-bottom: 40px;
+  }
+  .contact-mobile {
+    color: var(--brand-color);
+  }
+  .mobile-menu_container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-menu-list {
+    padding-bottom: 100px;
+  }
+  .mobile-tel {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--brand-color);
+  }
+  .mobile-tel-link {
+    margin-bottom: 40px;
+  }
+  .mobile-mail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--rubric-color);
+  }
+  .mobile-menu-contacts {
+    margin-bottom: 48px;
+  }
+  .mobile-icon-list {
+    display: flex;
+  }
+  .mobile-soc-icon {
+    fill: var(--icon-color);
+  }
+  .mobile-soc-item {
+    width: 44px;
+    height: 44px;
+  }
+  .mobile-soc-item:nth-child(-n + 3) {
+    margin-right: 56px;
+  }
+  .mobile-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
 }
+
 @media screen and (max-width: 767px) {
   .header-list,
   .contacts-mobile {
