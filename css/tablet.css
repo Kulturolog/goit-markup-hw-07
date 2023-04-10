@@ -116,4 +116,8 @@
     gap: 12px;
     margin-left: 67px;
   }
+  .studio-home,
+  .portfolio-portfolio {
+    padding: 36px 0;
+  }
 }
